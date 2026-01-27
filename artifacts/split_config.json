@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "created_utc": "2026-01-27T20:10:46.335958+00:00",
+  "group_col": "PATIENT_NBR",
+  "target_col": "READMITTED_30D",
+  "random_state": 42,
+  "sizes": {
+    "train_size": 0.7,
+    "valid_size": 0.15,
+    "test_size": 0.15
+  },
+  "target_rates": {
+    "train_rate": 0.11215044742729306,
+    "valid_rate": 0.11020163705330405,
+    "test_rate": 0.11038833037650306,
+    "overall_rate": 0.11159915885462728
+  },
+  "patient_disjointness": {
+    "train_patients": 50062,
+    "valid_patients": 10728,
+    "test_patients": 10728,
+    "overlap_train_valid": 0,
+    "overlap_train_test": 0,
+    "overlap_valid_test": 0
+  }
+}

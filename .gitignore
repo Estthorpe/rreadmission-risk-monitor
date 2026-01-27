@@ -1,0 +1,77 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# =========================
+# OS / Editor junk
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# =========================
+# Test / coverage
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Data (never commit raw/large data)
+# =========================
+data/raw/
+data/processed/
+!data/fixtures/
+
+# =========================
+# ML artifacts (large binaries)
+# =========================
+artifacts/*.parquet
+artifacts/*.joblib
+artifacts/*.pkl
+artifacts/monitoring/*.parquet
+
+# =========================
+# Model bundles (ignore binaries only)
+# =========================
+bundle/**/model.joblib
+bundle/**/calibrator.joblib
+
+# Allow lightweight metadata
+!bundle/**/metadata.json
+!bundle/**/feature_columns.json
+!bundle/**/reference_stats.json
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*

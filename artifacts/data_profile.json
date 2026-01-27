@@ -1,0 +1,9 @@
+{
+  "rows": 101766,
+  "cols": 51,
+  "target_rate": 0.11159915885462728,
+  "fixture_rows": 5000,
+  "raw_file": "diabetic_data.csv",
+  "processed_file": "train_table.parquet",
+  "fixture_file": "train_sample.parquet"
+}
