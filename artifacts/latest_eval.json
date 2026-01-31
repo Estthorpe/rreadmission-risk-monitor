@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-01-31T16:43:06.168062+00:00",
+  "model_version": "0.1.0",
+  "schema_version": "1.0.0",
+  "split": {
+    "random_state": 42,
+    "train_size": 0.7,
+    "valid_size": 0.15,
+    "_toggle": [
+      "test_size"
+    ],
+    "test_size": 0.15,
+    "group_col": "PATIENT_NBR",
+    "target_col": "READMITTED_30D",
+    "row_counts": {
+      "train": 71520,
+      "valid": 15027,
+      "test": 15219
+    }
+  },
+  "baseline": {
+    "model_type": "logistic_regression",
+    "valid": {
+      "n": 15027,
+      "positive_rate": 0.11020163705330405,
+      "auroc": 0.617949853258747,
+      "avg_precision": 0.1773086166549213,
+      "brier": 0.22518603407232013
+    },
+    "test": {
+      "n": 15219,
+      "positive_rate": 0.11038833037650306,
+      "auroc": 0.6403077177395813,
+      "avg_precision": 0.20278230883832668,
+      "brier": 0.22270839015367458
+    }
+  },
+  "advanced": {
+    "model_type": "lightgbm",
+    "valid": {
+      "n": 15027,
+      "positive_rate": 0.11020163705330405,
+      "auroc": 0.662845983646922,
+      "avg_precision": 0.2147389197022117,
+      "brier": 0.09396712141014253
+    },
+    "test": {
+      "n": 15219,
+      "positive_rate": 0.11038833037650306,
+      "auroc": 0.6816138298882592,
+      "avg_precision": 0.23392601019913517,
+      "brier": 0.09288736993272702
+    }
+  },
+  "notes": {
+    "calibration": "Phase 3 uses raw probabilities; calibration can be added in Phase 4."
+  }
+}
