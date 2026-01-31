@@ -2,7 +2,15 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Tuple, List
+
 import pandas as pd
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder
+
+
+
 
 @dataclass(frozen=True)
 class FeatureSpec:
@@ -49,4 +57,37 @@ def build_xy(
 
     return X, y, numeric_cols, categorical_cols 
 
+
+def build_preprocessor(
+        numeric_cols: List[str],
+        categorical_cols: List[str],
+) -> ColumnTransformer:
+    """
+    Build a preprocessing  ColumnTransformer using inferred numeric/categorical columns
+    Numeric: median impute
+    Categorical: most_frequent impute + onehot encode 
+    """
+    num_pipe = Pipeline(
+        steps=[
+            ("imputer", SimpleImputer(strategy="median")),
+        ]
+    )
+
+    cat_pipe = Pipeline(
+        steps=[
+            ("imputer", SimpleImputer(strategy="most_frequent")),
+            ("onehot", OneHotEncoder(handle_unknown="ignore")),
+        ]
+    )
+
+    pre = ColumnTransformer(
+        transformers=[
+            ("num", num_pipe, numeric_cols),
+            ("cat", cat_pipe, categorical_cols),
+        ],
+        remainder="drop",
+        verbose_feature_names_out=False,
+    )
+
+    return pre
 

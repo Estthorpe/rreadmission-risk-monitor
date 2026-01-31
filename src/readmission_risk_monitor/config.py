@@ -12,6 +12,7 @@ class Settings:
     data_fixtures_dir: Path = project_root / "data" / "fixtures"
 
     artifacts_dir: Path = project_root / "artifacts"
+    bundle_dir: Path = project_root / "bundle"
 
     raw_filename: str = "diabetic_data.csv"
     processed_table: str = "train_table.parquet"
