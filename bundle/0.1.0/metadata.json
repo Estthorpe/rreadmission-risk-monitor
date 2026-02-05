@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-01-31T16:43:06.232201+00:00",
+  "model_version": "0.1.0",
+  "schema_version": "1.0.0",
+  "model_type": "logistic_regression",
+  "python": {
+    "pandas": "2.3.3",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "feature_spec": {
+    "target_col": "READMITTED_30D",
+    "patient_id_col": "PATIENT_NBR",
+    "record_id_col": "ENCOUNTER_ID",
+    "forbidden_cols": [
+      "READMITTED"
+    ]
+  }
+}

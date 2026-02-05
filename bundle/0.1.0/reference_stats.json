@@ -1,0 +1,515 @@
+{
+  "generated_utc": "2026-01-31T16:43:06.329291+00:00",
+  "columns": {
+    "RACE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "Caucasian": 53458,
+        "AfricanAmerican": 13509,
+        "?": 1621,
+        "Hispanic": 1423,
+        "Other": 1063,
+        "Asian": 446
+      }
+    },
+    "GENDER": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "Female": 38339,
+        "Male": 33180,
+        "Unknown/Invalid": 1
+      }
+    },
+    "AGE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "[70-80)": 18370,
+        "[60-70)": 15699,
+        "[80-90)": 12191,
+        "[50-60)": 11980,
+        "[40-50)": 6853,
+        "[30-40)": 2613,
+        "[90-100)": 1998,
+        "[20-30)": 1223,
+        "[10-20)": 486,
+        "[0-10)": 107
+      }
+    },
+    "WEIGHT": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "?": 69223,
+        "[75-100)": 965,
+        "[50-75)": 647,
+        "[100-125)": 441,
+        "[125-150)": 106,
+        "[25-50)": 70,
+        "[0-25)": 31,
+        "[150-175)": 26,
+        "[175-200)": 8,
+        ">200": 3
+      }
+    },
+    "ADMISSION_TYPE_ID": {
+      "type": "numeric",
+      "mean": 2.0243288590604025,
+      "std": 1.4490207651866187,
+      "min": 1.0,
+      "max": 8.0,
+      "missing_rate": 0.0
+    },
+    "DISCHARGE_DISPOSITION_ID": {
+      "type": "numeric",
+      "mean": 3.702167225950783,
+      "std": 5.247928115765521,
+      "min": 1.0,
+      "max": 28.0,
+      "missing_rate": 0.0
+    },
+    "ADMISSION_SOURCE_ID": {
+      "type": "numeric",
+      "mean": 5.777139261744966,
+      "std": 4.069192140788901,
+      "min": 1.0,
+      "max": 25.0,
+      "missing_rate": 0.0
+    },
+    "TIME_IN_HOSPITAL": {
+      "type": "numeric",
+      "mean": 4.390883668903803,
+      "std": 2.984972068945074,
+      "min": 1.0,
+      "max": 14.0,
+      "missing_rate": 0.0
+    },
+    "PAYER_CODE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "?": 28278,
+        "MC": 22962,
+        "HM": 4404,
+        "SP": 3477,
+        "BC": 3319,
+        "MD": 2430,
+        "UN": 1743,
+        "CP": 1723,
+        "CM": 1357,
+        "OG": 714,
+        "PO": 401,
+        "DM": 357,
+        "WC": 103,
+        "CH": 97,
+        "MP": 60,
+        "OT": 56,
+        "SI": 39
+      }
+    },
+    "MEDICAL_SPECIALTY": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "?": 34945,
+        "InternalMedicine": 10530,
+        "Emergency/Trauma": 5394,
+        "Family/GeneralPractice": 5226,
+        "Cardiology": 3773,
+        "Surgery-General": 2196,
+        "Nephrology": 1098,
+        "Orthopedics": 933,
+        "Orthopedics-Reconstructive": 848,
+        "Radiologist": 789,
+        "Psychiatry": 605,
+        "Pulmonology": 599,
+        "Surgery-Cardiovascular/Thoracic": 483,
+        "ObstetricsandGynecology": 461,
+        "Urology": 446,
+        "Surgery-Vascular": 385,
+        "Gastroenterology": 375,
+        "Surgery-Neuro": 320,
+        "PhysicalMedicineandRehabilitation": 260,
+        "Oncology": 241
+      }
+    },
+    "NUM_LAB_PROCEDURES": {
+      "type": "numeric",
+      "mean": 43.127307046979865,
+      "std": 19.65640761254888,
+      "min": 1.0,
+      "max": 129.0,
+      "missing_rate": 0.0
+    },
+    "NUM_PROCEDURES": {
+      "type": "numeric",
+      "mean": 1.3365212527964205,
+      "std": 1.7066847747345224,
+      "min": 0.0,
+      "max": 6.0,
+      "missing_rate": 0.0
+    },
+    "NUM_MEDICATIONS": {
+      "type": "numeric",
+      "mean": 16.011479306487697,
+      "std": 8.132379380866832,
+      "min": 1.0,
+      "max": 81.0,
+      "missing_rate": 0.0
+    },
+    "NUMBER_OUTPATIENT": {
+      "type": "numeric",
+      "mean": 0.36965883668903804,
+      "std": 1.247393903366581,
+      "min": 0.0,
+      "max": 42.0,
+      "missing_rate": 0.0
+    },
+    "NUMBER_EMERGENCY": {
+      "type": "numeric",
+      "mean": 0.2013562639821029,
+      "std": 0.9809442123454734,
+      "min": 0.0,
+      "max": 76.0,
+      "missing_rate": 0.0
+    },
+    "NUMBER_INPATIENT": {
+      "type": "numeric",
+      "mean": 0.6460290827740492,
+      "std": 1.2879069422902567,
+      "min": 0.0,
+      "max": 21.0,
+      "missing_rate": 0.0
+    },
+    "DIAG_1": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "428": 4816,
+        "414": 4638,
+        "786": 2786,
+        "410": 2559,
+        "486": 2471,
+        "427": 1969,
+        "491": 1633,
+        "715": 1499,
+        "682": 1488,
+        "780": 1416,
+        "434": 1409,
+        "996": 1391,
+        "276": 1336,
+        "250.8": 1180,
+        "38": 1171,
+        "599": 1154,
+        "584": 1051,
+        "250.6": 850,
+        "V57": 832,
+        "820": 780
+      }
+    },
+    "DIAG_2": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "276": 4776,
+        "428": 4662,
+        "250": 4234,
+        "427": 3529,
+        "401": 2622,
+        "496": 2317,
+        "599": 2280,
+        "403": 1971,
+        "414": 1893,
+        "411": 1816,
+        "250.02": 1447,
+        "707": 1434,
+        "585": 1338,
+        "584": 1180,
+        "491": 1093,
+        "285": 1078,
+        "250.01": 1078,
+        "780": 1041,
+        "682": 1032,
+        "425": 1008
+      }
+    },
+    "DIAG_3": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "250": 8120,
+        "401": 5806,
+        "276": 3692,
+        "428": 3216,
+        "427": 2757,
+        "414": 2571,
+        "496": 1844,
+        "403": 1641,
+        "599": 1401,
+        "585": 1365,
+        "272": 1352,
+        "?": 1003,
+        "250.02": 980,
+        "707": 972,
+        "V45": 966,
+        "780": 939,
+        "285": 851,
+        "425": 781,
+        "250.6": 752,
+        "424": 748
+      }
+    },
+    "NUMBER_DIAGNOSES": {
+      "type": "numeric",
+      "mean": 7.426076621923937,
+      "std": 1.9312458481187234,
+      "min": 1.0,
+      "max": 16.0,
+      "missing_rate": 0.0
+    },
+    "MAX_GLU_SERUM": {
+      "type": "categorical",
+      "missing_rate": 0.9466163310961969,
+      "top_values": {
+        "__MISSING__": 67702,
+        "Norm": 1846,
+        ">200": 1091,
+        ">300": 881
+      }
+    },
+    "A1CRESULT": {
+      "type": "categorical",
+      "missing_rate": 0.832508389261745,
+      "top_values": {
+        "__MISSING__": 59541,
+        ">8": 5808,
+        "Norm": 3454,
+        ">7": 2717
+      }
+    },
+    "METFORMIN": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 57585,
+        "Steady": 12834,
+        "Up": 709,
+        "Down": 392
+      }
+    },
+    "REPAGLINIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 70449,
+        "Steady": 960,
+        "Up": 77,
+        "Down": 34
+      }
+    },
+    "NATEGLINIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71026,
+        "Steady": 465,
+        "Up": 22,
+        "Down": 7
+      }
+    },
+    "CHLORPROPAMIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71455,
+        "Steady": 59,
+        "Up": 5,
+        "Down": 1
+      }
+    },
+    "GLIMEPIRIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 67922,
+        "Steady": 3243,
+        "Up": 225,
+        "Down": 130
+      }
+    },
+    "ACETOHEXAMIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71520
+      }
+    },
+    "GLIPIZIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 62566,
+        "Steady": 8017,
+        "Up": 549,
+        "Down": 388
+      }
+    },
+    "GLYBURIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 64121,
+        "Steady": 6480,
+        "Up": 547,
+        "Down": 372
+      }
+    },
+    "TOLBUTAMIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71504,
+        "Steady": 16
+      }
+    },
+    "PIOGLITAZONE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 66353,
+        "Steady": 4916,
+        "Up": 167,
+        "Down": 84
+      }
+    },
+    "ROSIGLITAZONE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 67119,
+        "Steady": 4209,
+        "Up": 129,
+        "Down": 63
+      }
+    },
+    "ACARBOSE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71298,
+        "Steady": 212,
+        "Up": 7,
+        "Down": 3
+      }
+    },
+    "MIGLITOL": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71495,
+        "Steady": 20,
+        "Down": 4,
+        "Up": 1
+      }
+    },
+    "TROGLITAZONE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71517,
+        "Steady": 3
+      }
+    },
+    "TOLAZAMIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71492,
+        "Steady": 28
+      }
+    },
+    "EXAMIDE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71520
+      }
+    },
+    "CITOGLIPTON": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71520
+      }
+    },
+    "INSULIN": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 33227,
+        "Steady": 21723,
+        "Down": 8573,
+        "Up": 7997
+      }
+    },
+    "GLYBURIDE_METFORMIN": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71014,
+        "Steady": 496,
+        "Up": 7,
+        "Down": 3
+      }
+    },
+    "GLIPIZIDE_METFORMIN": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71508,
+        "Steady": 12
+      }
+    },
+    "GLIMEPIRIDE_PIOGLITAZONE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71519,
+        "Steady": 1
+      }
+    },
+    "METFORMIN_ROSIGLITAZONE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71518,
+        "Steady": 2
+      }
+    },
+    "METFORMIN_PIOGLITAZONE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 71520
+      }
+    },
+    "CHANGE": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "No": 38519,
+        "Ch": 33001
+      }
+    },
+    "DIABETESMED": {
+      "type": "categorical",
+      "missing_rate": 0.0,
+      "top_values": {
+        "Yes": 55113,
+        "No": 16407
+      }
+    }
+  }
+}

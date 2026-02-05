@@ -1,0 +1,10 @@
+[theme]
+base="light"
+
+# Brand palette 
+primaryColor="#115CAC"            # Deep clinical blue
+backgroundColor="#F6F8FC"         # Light neutral
+secondaryBackgroundColor="#FFFFFF"
+textColor="#0B1220"
+
+font="sans serif"

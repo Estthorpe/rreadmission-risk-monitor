@@ -75,3 +75,6 @@ bundle/**/calibrator.joblib
 # =========================
 .env
 .env.*
+
+# =========================
+bundle/model_0.1.0/model.joblib 
